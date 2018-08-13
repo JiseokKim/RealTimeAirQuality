@@ -1,0 +1,13 @@
+<resources>
+    <declare-styleable name="SensorValueCircleView">
+        <attr name="valueString" format="string" />
+        <attr name="unitString" format="string" />
+        <attr name="viewDimension" format="dimension" />
+        <attr name="valueTextSize" format="float"/>
+        <attr name="unitTextSize" format="float"/>
+        <attr name="circleColor" format="color" />
+        <attr name="valueTextColor" format="color"/>
+        <attr name="unitTextColor" format="color" />
+        <attr name="viewDrawable" format="color|reference" />
+    </declare-styleable>
+</resources>
