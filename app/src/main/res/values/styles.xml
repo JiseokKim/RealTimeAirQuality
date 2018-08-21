@@ -8,4 +8,33 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <!-- default text style -->
+    <style name="DefaultTextStyle">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!-- good sensor state text style -->
+    <style name="GoodStateTextStyle">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/light_blue_900</item>
+    </style>
+
+    <!-- common sensor state text style -->
+    <style name="CommonStateTextStyle">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/green_900</item>
+    </style>
+
+    <!-- warning sensor state text style -->
+    <style name="WarningStateTextStyle">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/yellow_900</item>
+    </style>
+
+    <!-- dangerous sensor state text style -->
+    <style name="DangerousStateTextStyle">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/red_900</item>
+    </style>
 </resources>

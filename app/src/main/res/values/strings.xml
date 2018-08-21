@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">RealTimeAirQuality</string>
+    <string name="sensor_name_temp">Temperature</string>
+    <string name="sensor_name_humid">Humidity</string>
+    <string name="sensor_name_noise">Noise</string>
+    <string name="sensor_name_ozone">Ozone</string>
+    <string name="sensor_name_pm_2_5">PM2.5</string>
+    <string name="sensor_name_pm_10">PM10</string>
+    <string name="sensor_name_dust">Fine dust</string>
+    <string name="sensor_name_co2">CO2</string>
+    <string name="sensor_name_no2">NO2</string>
 </resources>
