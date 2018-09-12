@@ -32,10 +32,10 @@
         android:height=""/>-->
     <!--shape의 내부를 채울 단색-->
     <solid
-        android:color="@color/black" />
+        android:color="@color/crimson" />
     <!--shape의 테두리 선 속성-->
     <stroke
-        android:width="3dp"
+        android:width="1dp"
         android:color="@color/light_bg_dark_primary_text"/>
         <!--android:dashWidth="" 각 점선의 크기, dashGap 속성이 있을 경우에만 적용-->
         <!--android:dashGap="" 점선 사이의 거리, dashWidth 속성이 있을 경우에만 적용-->

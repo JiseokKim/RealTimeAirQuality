@@ -265,6 +265,7 @@
     <color name="orange_A200">#FFAB40</color>
     <color name="orange_A400">#FF9100</color>
     <color name="orange_A700">#FF6D00</color>
+    <color name="dark_orange">#ff8a00</color>
 
     <color name="grey_50">#FAFAFA</color>
     <color name="grey_100">#F5F5F5</color>
@@ -280,6 +281,7 @@
     <color name="black">#000000</color>
     <color name="dark_slate_gray">#2f2f2f</color>
     <color name="white">#FFFFFF</color>
+    <color name="crimson">#db0a1f</color>
 
     <!-- Colors for the app -->
     <color name="primary">@color/indigo_500</color>

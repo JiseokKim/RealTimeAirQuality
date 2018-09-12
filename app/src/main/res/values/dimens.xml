@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="default_text_size">16dp</dimen>
+    <dimen name="sensor_kind_text_size">14dp</dimen>
+    <dimen name="sensor_value_text_size">24dp</dimen>
+</resources>

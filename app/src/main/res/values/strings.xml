@@ -9,4 +9,10 @@
     <string name="sensor_name_dust">Fine dust</string>
     <string name="sensor_name_co2">CO2</string>
     <string name="sensor_name_no2">NO2</string>
+    <string name="example_text_clock_date">07/10</string>
+    <string name="example_text_clock_year">2015</string>
+    <string name="example_text_clock_day">MON</string>
+    <string name="example_text_clock_am_pm">AM</string>
+    <string name="example_text_clock_hour">08</string>
+    <string name="example_text_clock_min">:14</string>
 </resources>

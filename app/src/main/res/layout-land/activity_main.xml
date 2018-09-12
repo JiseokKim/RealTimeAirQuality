@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <LinearLayout
         android:id="@+id/main_left_layout"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="match_parent"
         android:orientation="vertical"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/main_right_layout">
+        app:layout_constraintEnd_toStartOf="@id/main_right_layout"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.6">
 
         <android.support.v4.view.ViewPager
             android:id="@+id/viewpager_main"
@@ -21,29 +25,102 @@
 
     <LinearLayout
         android:id="@+id/main_right_layout"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="match_parent"
         android:background="@color/crimson"
         android:orientation="vertical"
         app:layout_constraintStart_toEndOf="@id/main_left_layout"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.4">
 
-        <TextView
-            android:id="@+id/textview_main_clock"
+        <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Clock"
-            android:textSize="25sp" />
-       <LinearLayout
-           android:layout_width="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/textview_main_clock_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/example_text_clock_date"
+                android:textSize="25sp"
+                app:layout_constrainedWidth="true"
+                 />
+
+            <TextView
+                android:id="@+id/textview_main_clock_year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/example_text_clock_year"
+                android:textSize="25sp"
+                android:layout_marginStart="8dp"
+                app:layout_constraintStart_toEndOf="@id/textview_main_clock_date"
+                app:layout_constrainedWidth="true"
+                />
+
+            <TextView
+                android:id="@+id/textview_main_clock_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/example_text_clock_day"
+                android:textSize="25sp"
+                app:layout_constraintTop_toBottomOf="@id/textview_main_clock_date"
+                app:layout_constrainedWidth="true"
+                />
+            <TextView
+                android:id="@+id/textview_main_clock_am_pm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/example_text_clock_am_pm"
+                android:textSize="25sp"
+                android:layout_marginStart="8dp"
+                app:layout_constraintStart_toEndOf="@id/textview_main_clock_day"
+                app:layout_constraintTop_toBottomOf="@+id/textview_main_clock_year"
+                app:layout_constrainedWidth="true"
+                />
+
+            <TextView
+                android:id="@+id/textview_main_clock_hour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/example_text_clock_hour"
+                android:textSize="25sp"
+                android:layout_marginStart="4dp"
+                app:layout_constraintStart_toEndOf="@id/textview_main_clock_am_pm"
+                app:layout_constraintTop_toBottomOf="@+id/textview_main_clock_year"
+                app:layout_constrainedWidth="true"
+                />
+
+            <TextView
+                android:id="@+id/textview_main_clock_min"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/example_text_clock_min"
+                android:textSize="25sp"
+                android:layout_marginStart="4dp"
+                app:layout_constraintStart_toEndOf="@id/textview_main_clock_hour"
+                app:layout_constraintTop_toBottomOf="@+id/textview_main_clock_year"
+                app:layout_constrainedWidth="true"
+                />
+        </android.support.constraint.ConstraintLayout>
+
+        <LinearLayout
+           android:layout_width="match_parent"
            android:layout_height="wrap_content"
            android:id="@+id/main_sensor_data_first_row_layout"
            android:layout_weight="1">
            <TextView
                android:id="@+id/main_textview_temperatures"
                android:layout_width="match_parent"
-               android:layout_height="wrap_content"
+               android:layout_height="match_parent"
                android:layout_weight="1"
                android:text="Fire"
                android:textSize="25sp"
@@ -53,7 +130,7 @@
            <TextView
                android:id="@+id/main_textview_humidity"
                android:layout_width="match_parent"
-               android:layout_height="wrap_content"
+               android:layout_height="match_parent"
                android:layout_weight="1"
                android:text="Gold"
                android:textSize="25sp"
@@ -61,14 +138,14 @@
                android:background="@drawable/rectangle_dark_gray_background"/>
        </LinearLayout>
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/main_sensor_data_second_row_layout"
             android:layout_weight="1">
             <TextView
                 android:id="@+id/main_textview_pm10"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="Fire"
                 android:textSize="25sp"
@@ -78,7 +155,7 @@
             <TextView
                 android:id="@+id/main_textview_pm2_5"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="Gold"
                 android:textSize="25sp"
@@ -86,14 +163,14 @@
                 android:background="@drawable/rectangle_dark_gray_background"/>
         </LinearLayout>
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/main_sensor_data_third_row_layout"
             android:layout_weight="1">
             <TextView
                 android:id="@+id/main_textview_ozone"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="Fire"
                 android:textSize="25sp"
@@ -103,13 +180,17 @@
             <TextView
                 android:id="@+id/main_textview_co2"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="Gold"
                 android:textSize="25sp"
                 android:textColor="@color/white"
                 android:background="@drawable/rectangle_dark_gray_background"/>
         </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
 
     </LinearLayout>
 
