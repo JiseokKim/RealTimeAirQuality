@@ -22,6 +22,10 @@ public class SensorType {
     public SensorType(Resources resources) {
         mResources = resources;
     }
+    /*string.xml 파일에서 값을 가져오기 위해 기존 View나 Activity에서 사용하던
+     *getResources().getResourcesName(R.string.bla)가 일반 자바 클래스에서는
+     * 작동하지 않아서 getString(R.string.bla)로 적용
+     */
     public String getSensorName(int sensorKind){
         String sensorKindName="";
         switch(sensorKind){
