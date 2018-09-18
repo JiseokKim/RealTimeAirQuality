@@ -20,46 +20,41 @@ public class SensorDataIO {
 		return temperatureValue;
 	}
     public void setHumidityValue(int sensorRawValue) {
+		humidityValue = sensorCalculator.calculateHumidityValue(sensorRawValue);
     	
     }
 	public double getHumidityValue() {
-		double value = 0.0d;
-		return value;
+		return humidityValue;
 	}
     public void setNoiseValue(int sensorRawValue) {
-    	
+    	noiseValue = sensorCalculator.calculateNoiseValue(sensorRawValue);
     }
 	public double getNoiseValue() {
-		double value = 0.0d;
-		return value;
+		return noiseValue;
 	}
     public void setOzoneValue(int sensorRawValue) {
-    	
+    	ozoneValue = sensorCalculator.calculateOzoneValue(sensorRawValue);
     }
 	public double getOzoneValue() {
-		double value = 0.0d;
-		return value;
+		return ozoneValue;
 	}
 	public void setPM2_5Value(int sensorRawValue) {
-		
+		pm2_5Value = sensorCalculator.calculatePM2_5Value(sensorRawValue);
 	}
 	public double getPM2_5Value() {
-		double value = 0.0d;
-		return value;
+		return pm2_5Value;
 	}
 	public void setPM10Value(int sensorRawValue) {
-		
+		pm10Value = sensorCalculator.calculatePM10Value(sensorRawValue);
 	}
 	public double getPM10Value() {
-		double value = 0.0d;
-		return value;
+		return pm10Value;
 	}
 	public void setCO2Value(int sensorRawValue) {
-		
+		co2Value = sensorCalculator.calculateCO2Value(sensorRawValue);
 	}
 	public double getCO2Value() {
-		double value = 0.0d;
-		return value;
+		return co2Value;
 	}
 
 }
