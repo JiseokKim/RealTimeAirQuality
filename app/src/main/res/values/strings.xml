@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">RealTimeAirQuality</string>
-
+    <!--        Sensor Name         -->
     <string name="sensor_name_temp">Temperature</string>
     <string name="sensor_name_humid">Humidity</string>
     <string name="sensor_name_noise">Noise</string>
@@ -10,17 +10,26 @@
     <string name="sensor_name_dust">Fine dust</string>
     <string name="sensor_name_co2">CO2</string>
     <string name="sensor_name_no2">NO2</string>
-
+    <!--        Clock Text         -->
     <string name="example_text_clock_date">07/10</string>
     <string name="example_text_clock_year">2015</string>
     <string name="example_text_clock_day">MON</string>
     <string name="example_text_clock_am_pm">AM</string>
     <string name="example_text_clock_hour">08</string>
     <string name="example_text_clock_min">:14</string>
-
+    <!--        Sensor Value State         -->
     <string name="sensor_value_good_state">좋음</string>
     <string name="sensor_value_normal_state">보통</string>
     <string name="sensor_value_bad_state">나쁨</string>
     <string name="sensor_value_very_poor_state">매우나쁨</string>
     <string name="sensor_value_danger_state">위험</string>
+    <!--        Sensor Unit         -->
+    <string name="sensor_temperature_unit_celsius">℃</string>
+    <string name="sensor_temperature_unit_fahrenheit">℉</string>
+    <string name="sensor_humidity_unit">％</string>
+    <string name="sensor_chemical_gas_concentration_unit_ppb">ppb</string>
+    <string name="sensor_chemical_gas_concentration_unit_ppm">ppm</string>
+    <string name="sensor_noise_unit">dB</string>
+    <string name="sensor_dust_unit">㎍/㎥</string>
+    <string name="sensor_wind_speed_unit">m/s</string>
 </resources>

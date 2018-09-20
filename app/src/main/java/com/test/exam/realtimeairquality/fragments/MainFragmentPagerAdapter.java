@@ -8,7 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 public class MainFragmentPagerAdapter extends FragmentStatePagerAdapter {
-    private static final int NUM_PAGES = 12;
+    private static final int NUM_PAGES = 6;
     public MainFragmentPagerAdapter(FragmentManager fm) {
         super(fm);
     }

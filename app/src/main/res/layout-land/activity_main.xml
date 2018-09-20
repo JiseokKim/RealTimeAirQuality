@@ -17,7 +17,7 @@
         app:layout_constraintWidth_percent="0.6">
 
         <android.support.v4.view.ViewPager
-            android:id="@+id/viewpager_main"
+            android:id="@+id/main_viewpager"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp" />
@@ -27,7 +27,6 @@
         android:id="@+id/main_right_layout"
         android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:background="@color/crimson"
         android:orientation="vertical"
         app:layout_constraintStart_toEndOf="@id/main_left_layout"
         app:layout_constraintEnd_toEndOf="parent"
@@ -125,7 +124,7 @@
                android:text="Fire"
                android:textSize="25sp"
                android:textColor="@color/white"
-               android:background="@drawable/rectangle_dark_gray_background"/>
+               android:background="@drawable/rectangle_round_corner_blue_background"/>
 
            <TextView
                android:id="@+id/main_textview_humidity"
@@ -135,7 +134,7 @@
                android:text="Gold"
                android:textSize="25sp"
                android:textColor="@color/white"
-               android:background="@drawable/rectangle_dark_gray_background"/>
+               android:background="@drawable/rectangle_round_corner_blue_background"/>
        </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -150,7 +149,7 @@
                 android:text="Fire"
                 android:textSize="25sp"
                 android:textColor="@color/white"
-                android:background="@drawable/rectangle_dark_gray_background"/>
+                android:background="@drawable/rectangle_round_corner_blue_background"/>
 
             <TextView
                 android:id="@+id/main_textview_pm2_5"
@@ -160,7 +159,7 @@
                 android:text="Gold"
                 android:textSize="25sp"
                 android:textColor="@color/white"
-                android:background="@drawable/rectangle_dark_gray_background"/>
+                android:background="@drawable/rectangle_round_corner_blue_background"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -174,8 +173,7 @@
                 android:layout_weight="1"
                 android:text="Fire"
                 android:textSize="25sp"
-                android:textColor="@color/white"
-                android:background="@drawable/rectangle_dark_gray_background"/>
+                android:background="@drawable/rectangle_round_corner_blue_background"/>
 
             <TextView
                 android:id="@+id/main_textview_co2"
@@ -185,7 +183,7 @@
                 android:text="Gold"
                 android:textSize="25sp"
                 android:textColor="@color/white"
-                android:background="@drawable/rectangle_dark_gray_background"/>
+                android:background="@drawable/rectangle_round_corner_blue_background"/>
         </LinearLayout>
         <TextView
             android:layout_width="match_parent"
